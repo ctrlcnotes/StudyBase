@@ -21,7 +21,7 @@
         html { scroll-behavior: smooth; }
 
         body {
-            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             background: var(--paper);
             color: var(--black);
             line-height: 1.6;
@@ -42,10 +42,11 @@
 
         .logo {
             color: var(--coral);
-            font-size: 1.25rem;
-            font-weight: 800;
-            letter-spacing: -0.5px;
+            font-size: 1.2rem;
+            font-weight: 900;
+            letter-spacing: 0px;
             text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .logo span { color: #fff; }
@@ -59,8 +60,10 @@
         nav ul li a {
             color: #ccc;
             text-decoration: none;
-            font-size: 0.88rem;
+            font-size: 0.85rem;
             transition: color 0.15s;
+            cursor: pointer;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         nav ul li a:hover { color: var(--coral); }
@@ -91,7 +94,7 @@
         }
 
         .eyebrow {
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             font-weight: 700;
             letter-spacing: 2.5px;
             text-transform: uppercase;
@@ -100,10 +103,11 @@
         }
 
         .hero h1 {
-            font-size: clamp(1.7rem, 5vw, 2.8rem);
-            line-height: 1.18;
+            font-size: clamp(1.6rem, 5vw, 2.6rem);
+            line-height: 1.2;
             margin-bottom: 14px;
             max-width: 620px;
+            font-weight: 900;
         }
 
         .hero h1 em {
@@ -115,7 +119,7 @@
             color: #555;
             max-width: 520px;
             margin-bottom: 26px;
-            font-size: 0.95rem;
+            font-size: 0.93rem;
         }
 
         .hero-btns {
@@ -126,14 +130,15 @@
 
         .btn {
             padding: 10px 22px;
-            border-radius: 6px;
-            font-size: 0.88rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
             font-weight: 700;
             cursor: pointer;
             border: 2px solid var(--black);
             text-decoration: none;
             transition: all 0.15s;
             display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .btn-fill {
@@ -169,8 +174,9 @@
         }
 
         .section-wrap h2 {
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             margin-bottom: 22px;
+            font-weight: 900;
         }
 
         /* TOOLS */
@@ -182,13 +188,16 @@
 
         .card {
             background: var(--stone);
-            border-radius: 10px;
+            border-radius: 6px;
             padding: 22px;
         }
 
         .card > h3 {
-            font-size: 1rem;
-            margin-bottom: 6px;
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .card > .sub {
@@ -206,14 +215,17 @@
         }
 
         .mode-btn {
-            font-size: 0.72rem;
-            font-weight: 600;
+            font-size: 0.7rem;
+            font-weight: 700;
             padding: 4px 12px;
-            border-radius: 20px;
+            border-radius: 2px;
             border: 1.5px solid #aaa;
             background: transparent;
             cursor: pointer;
             transition: all 0.15s;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
         }
 
         .mode-btn.active {
@@ -224,11 +236,12 @@
 
         .timer-display {
             font-size: 3rem;
-            font-weight: 800;
+            font-weight: 900;
             text-align: center;
             margin: 10px 0 14px;
-            letter-spacing: 3px;
+            letter-spacing: 4px;
             font-variant-numeric: tabular-nums;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .timer-btns {
@@ -239,13 +252,15 @@
 
         .timer-btns button {
             padding: 8px 20px;
-            border-radius: 6px;
+            border-radius: 4px;
             border: 2px solid var(--black);
-            font-size: 0.85rem;
+            font-size: 0.82rem;
             font-weight: 700;
             cursor: pointer;
             background: transparent;
             transition: all 0.15s;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
         }
 
         .timer-btns button:hover {
@@ -266,9 +281,9 @@
             width: 100%;
             min-height: 148px;
             border: 2px solid #bbb;
-            border-radius: 7px;
+            border-radius: 4px;
             padding: 11px 13px;
-            font-family: inherit;
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 0.88rem;
             background: var(--paper);
             resize: vertical;
@@ -291,14 +306,16 @@
         }
 
         .clear-btn {
-            font-size: 0.78rem;
+            font-size: 0.75rem;
             padding: 5px 13px;
-            border-radius: 5px;
+            border-radius: 3px;
             border: 1.5px solid var(--black);
             background: transparent;
             cursor: pointer;
-            font-weight: 600;
+            font-weight: 700;
             transition: all 0.15s;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
         }
 
         .clear-btn:hover {
@@ -310,32 +327,41 @@
         .tips-wrap {
             display: flex;
             flex-direction: column;
-            gap: 11px;
+            gap: 10px;
         }
 
         .tip-item {
             background: var(--stone);
-            border-radius: 8px;
+            border-radius: 5px;
             padding: 14px 18px;
             display: flex;
-            gap: 14px;
+            gap: 16px;
             align-items: flex-start;
         }
 
-        .tip-icon {
-            font-size: 1.25rem;
+        .tip-num {
+            font-size: 0.7rem;
+            font-weight: 900;
+            color: var(--coral);
             flex-shrink: 0;
-            margin-top: 1px;
+            margin-top: 3px;
+            letter-spacing: 0.5px;
+            font-family: Arial, Helvetica, sans-serif;
+            min-width: 22px;
         }
 
-        .tip-item h4 { font-size: 0.93rem; margin-bottom: 3px; }
+        .tip-item h4 {
+            font-size: 0.9rem;
+            margin-bottom: 3px;
+            font-weight: 700;
+        }
 
         .tip-item p { font-size: 0.82rem; color: #555; }
 
         /* COMMENTS */
         .comment-form {
             background: var(--stone);
-            border-radius: 10px;
+            border-radius: 6px;
             padding: 22px;
             margin-bottom: 26px;
         }
@@ -352,8 +378,8 @@
             width: 100%;
             padding: 9px 13px;
             border: 2px solid transparent;
-            border-radius: 6px;
-            font-family: inherit;
+            border-radius: 4px;
+            font-family: Arial, Helvetica, sans-serif;
             font-size: 0.88rem;
             background: var(--paper);
             outline: none;
@@ -394,29 +420,37 @@
         .avatar {
             width: 34px;
             height: 34px;
-            border-radius: 50%;
+            border-radius: 2px;
             background: var(--coral);
             color: #fff;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 0.8rem;
-            font-weight: 800;
+            font-size: 0.75rem;
+            font-weight: 900;
             flex-shrink: 0;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
-        .meta-info .author { font-weight: 700; font-size: 0.9rem; }
+        .meta-info .author {
+            font-weight: 700;
+            font-size: 0.88rem;
+        }
 
         .meta-info .badge {
-            font-size: 0.72rem;
+            font-size: 0.7rem;
             color: #777;
             margin-left: 6px;
             background: var(--stone);
             padding: 1px 7px;
-            border-radius: 10px;
+            border-radius: 2px;
         }
 
-        .meta-info .time { font-size: 0.72rem; color: #999; margin-top: 1px; }
+        .meta-info .time {
+            font-size: 0.7rem;
+            color: #999;
+            margin-top: 1px;
+        }
 
         .comment-text {
             font-size: 0.88rem;
@@ -428,8 +462,133 @@
         .no-comments {
             text-align: center;
             color: #999;
-            font-size: 0.88rem;
+            font-size: 0.85rem;
             padding: 36px 0;
+        }
+
+        /* DELETE BUTTON */
+        .del-btn {
+            margin-left: auto;
+            flex-shrink: 0;
+            background: none;
+            border: 1.5px solid #ccc;
+            border-radius: 3px;
+            color: #bbb;
+            font-size: 0.68rem;
+            font-weight: 700;
+            padding: 3px 9px;
+            cursor: pointer;
+            transition: all 0.15s;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            align-self: center;
+        }
+
+        .del-btn:hover {
+            border-color: var(--coral);
+            color: var(--coral);
+            background: #fff5f4;
+        }
+
+        /* ABOUT MODAL */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 9999;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .modal-overlay.open {
+            display: flex;
+        }
+
+        .modal-box {
+            background: var(--paper);
+            border-radius: 6px;
+            padding: 36px 32px 30px;
+            max-width: 500px;
+            width: 100%;
+            position: relative;
+            max-height: 90vh;
+            overflow-y: auto;
+            border-top: 4px solid var(--coral);
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 14px;
+            right: 16px;
+            background: none;
+            border: none;
+            font-size: 1.3rem;
+            cursor: pointer;
+            color: #aaa;
+            line-height: 1;
+            transition: color 0.15s;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+        }
+
+        .modal-close:hover { color: var(--coral); }
+
+        .modal-box h2 {
+            font-size: 1.3rem;
+            margin-bottom: 6px;
+            font-weight: 900;
+        }
+
+        .modal-box .modal-eyebrow {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--coral);
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .modal-box p {
+            font-size: 0.86rem;
+            color: #444;
+            margin-bottom: 13px;
+            line-height: 1.65;
+        }
+
+        .modal-box p:last-child { margin-bottom: 0; }
+
+        .modal-divider {
+            border: none;
+            border-top: 1.5px solid var(--stone);
+            margin: 18px 0;
+        }
+
+        .modal-feature-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 9px;
+            margin-bottom: 14px;
+        }
+
+        .modal-feature-list li {
+            font-size: 0.84rem;
+            color: #333;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .modal-feature-list li .icon {
+            flex-shrink: 0;
+            font-weight: 900;
+            color: var(--coral);
+            font-size: 0.75rem;
+            margin-top: 3px;
+            min-width: 14px;
         }
 
         /* FOOTER */
@@ -438,8 +597,9 @@
             color: #888;
             text-align: center;
             padding: 18px 24px;
-            font-size: 0.78rem;
+            font-size: 0.75rem;
             margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         footer a { color: var(--coral); text-decoration: none; }
@@ -468,10 +628,33 @@
             .hero { padding: 36px 20px 28px; }
             .section-wrap { padding: 32px 20px; }
             .divider { margin: 0 20px; }
+
+            .modal-box { padding: 28px 20px 22px; }
         }
     </style>
 </head>
 <body>
+
+<!-- ABOUT MODAL -->
+<div class="modal-overlay" id="aboutModal">
+    <div class="modal-box">
+        <button class="modal-close" id="closeModal" aria-label="Close">x</button>
+        <span class="modal-eyebrow">What is this?</span>
+        <h2>About StudyBase</h2>
+        <p>StudyBase is a free, no-login student hub built for Filipino high school and senior high school students. No ads, no fluff -- just tools and a space to connect.</p>
+        <hr class="modal-divider">
+        <p style="font-weight:700;font-size:0.8rem;margin-bottom:10px;">What's inside:</p>
+        <ul class="modal-feature-list">
+            <li><span class="icon">--</span><span><strong>Pomodoro Timer</strong> -- study in 25-minute focused blocks with built-in break modes.</span></li>
+            <li><span class="icon">--</span><span><strong>Quick Notes</strong> -- a scratch pad for ideas, reminders, or anything you need to jot down fast.</span></li>
+            <li><span class="icon">--</span><span><strong>Study Tips</strong> -- short, research-backed tips that actually work in practice.</span></li>
+            <li><span class="icon">--</span><span><strong>Discussion Board</strong> -- leave comments, ask questions, or share tips with other students.</span></li>
+        </ul>
+        <hr class="modal-divider">
+        <p>This site was made as a simple, honest resource for students. It is not perfect, but it gets the job done. If something is not working or you have a suggestion, drop it in the comments.</p>
+        <p style="color:#999;font-size:0.76rem;">Hosted on GitHub Pages. Comments via Firebase.</p>
+    </div>
+</div>
 
 <nav>
     <a href="#" class="logo">Study<span>Base</span></a>
@@ -479,6 +662,7 @@
         <li><a href="#tools">Tools</a></li>
         <li><a href="#tips">Tips</a></li>
         <li><a href="#discuss">Discussion</a></li>
+        <li><a id="aboutLink" href="#">About</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Open menu">
         <span></span><span></span><span></span>
@@ -486,12 +670,13 @@
 </nav>
 
 <div class="hero">
-    <p class="eyebrow">For Students · By Students</p>
+    <p class="eyebrow">For Students -- By Students</p>
     <h1>A simple <em>study hub</em> built for high school.</h1>
-    <p>Quick tools, practical tips, and a space to talk. No ads, no distractions — just stuff that actually helps.</p>
+    <p>Quick tools, practical tips, and a space to talk. No ads, no distractions -- just stuff that actually helps.</p>
     <div class="hero-btns">
         <a href="#tools" class="btn btn-fill">Open Tools</a>
         <a href="#discuss" class="btn btn-outline">Leave a Comment</a>
+        <button class="btn btn-outline" id="heroAboutBtn">About This Site</button>
     </div>
 </div>
 
@@ -504,7 +689,7 @@
     <div class="tools-grid">
 
         <div class="card">
-            <h3>⏱ Pomodoro Timer</h3>
+            <h3>Pomodoro Timer</h3>
             <p class="sub">Work in focused bursts. Rest between them.</p>
             <div class="mode-row">
                 <button class="mode-btn active" data-mins="25">Focus 25</button>
@@ -519,7 +704,7 @@
         </div>
 
         <div class="card">
-            <h3>📝 Quick Notes</h3>
+            <h3>Quick Notes</h3>
             <p class="sub">Scratch pad for ideas. Clears when you refresh.</p>
             <textarea class="notes-area" id="notesArea" placeholder="Type something..."></textarea>
             <div class="notes-footer">
@@ -539,45 +724,45 @@
     <h2>Study Smarter, Not Harder</h2>
     <div class="tips-wrap">
         <div class="tip-item">
-            <span class="tip-icon">🧠</span>
+            <span class="tip-num">01.</span>
             <div>
                 <h4>Active recall beats re-reading</h4>
-                <p>After studying, close your notes and try to recall everything from memory. It feels harder — that's exactly why it works.</p>
+                <p>After studying, close your notes and try to recall everything from memory. It feels harder -- that's exactly why it works.</p>
             </div>
         </div>
         <div class="tip-item">
-            <span class="tip-icon">📅</span>
+            <span class="tip-num">02.</span>
             <div>
                 <h4>Space out your reviews</h4>
                 <p>Review material after 1 day, 3 days, then a week. Spaced repetition is one of the most research-backed study methods.</p>
             </div>
         </div>
         <div class="tip-item">
-            <span class="tip-icon">📵</span>
+            <span class="tip-num">03.</span>
             <div>
-                <h4>Phone in another room — actually</h4>
+                <h4>Phone in another room -- actually</h4>
                 <p>Even a face-down phone on the desk drains your focus. Put it away. The notifs will still be there in 25 minutes.</p>
             </div>
         </div>
         <div class="tip-item">
-            <span class="tip-icon">😴</span>
+            <span class="tip-num">04.</span>
             <div>
                 <h4>Sleep consolidates memory</h4>
                 <p>Your brain processes what you learned while you sleep. Studying until 2am almost always backfires. Sleep, then review.</p>
             </div>
         </div>
         <div class="tip-item">
-            <span class="tip-icon">✏️</span>
+            <span class="tip-num">05.</span>
             <div>
                 <h4>Teach it out loud</h4>
                 <p>Try explaining a concept to yourself as if you're teaching it. If you can't explain it simply, you don't fully understand it yet.</p>
             </div>
         </div>
         <div class="tip-item">
-            <span class="tip-icon">📖</span>
+            <span class="tip-num">06.</span>
             <div>
                 <h4>Chunk big tasks</h4>
-                <p>"Study for the exam" is too vague. Try "review Chapter 3 definitions" — specific tasks are easier to start and finish.</p>
+                <p>"Study for the exam" is too vague. Try "review Chapter 3 definitions" -- specific tasks are easier to start and finish.</p>
             </div>
         </div>
     </div>
@@ -603,18 +788,18 @@
     </div>
 
     <div id="commentsList">
-        <div class="no-comments">No comments yet. Be the first to post!</div>
+        <div class="no-comments">No comments yet. Be the first to post.</div>
     </div>
 </div>
 
 <footer>
-    <p>StudyBase &mdash; A student hub for Filipino high school &amp; SHS students &bull; <a href="https://github.com" target="_blank">GitHub</a></p>
-    <p style="margin-top:4px;">Comments are powered by Firebase. Keep it respectful.</p>
+    <p>StudyBase -- A student hub for Filipino high school and SHS students &nbsp;|&nbsp; <a href="https://github.com" target="_blank">GitHub</a></p>
+    <p style="margin-top:4px;">Comments powered by Firebase. Keep it respectful.</p>
 </footer>
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-  import { getFirestore, collection, addDoc, onSnapshot, query, orderBy, serverTimestamp }
+  import { getFirestore, collection, addDoc, deleteDoc, doc, onSnapshot, query, orderBy, serverTimestamp }
     from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 
   const firebaseConfig = {
@@ -630,10 +815,10 @@
   const db = getFirestore(app);
   const col = collection(db, "comments");
 
-  // Real-time listener
   onSnapshot(query(col, orderBy("timestamp", "desc")), (snap) => {
     const data = snap.docs.map(d => ({ id: d.id, ...d.data() }));
     renderComments(data.map(c => ({
+      id: c.id,
       name: c.name,
       grade: c.grade || "",
       text: c.text,
@@ -651,6 +836,15 @@
     document.getElementById("commentGrade").value = "";
     document.getElementById("commentText").value = "";
   });
+
+  document.getElementById("commentsList").addEventListener("click", async (e) => {
+    if (!e.target.classList.contains("del-btn")) return;
+    const docId = e.target.dataset.id;
+    if (!docId) return;
+    if (confirm("Remove this comment?")) {
+      await deleteDoc(doc(db, "comments", docId));
+    }
+  });
 </script>
 =================================================================
 -->
@@ -665,6 +859,31 @@
         link.addEventListener("click", function() {
             document.getElementById("navMenu").classList.remove("open");
         });
+    });
+
+    // --- ABOUT MODAL ---
+    var modal = document.getElementById("aboutModal");
+
+    function openModal() { modal.classList.add("open"); }
+    function closeModal() { modal.classList.remove("open"); }
+
+    document.getElementById("aboutLink").addEventListener("click", function(e) {
+        e.preventDefault();
+        openModal();
+    });
+
+    document.getElementById("heroAboutBtn").addEventListener("click", function() {
+        openModal();
+    });
+
+    document.getElementById("closeModal").addEventListener("click", closeModal);
+
+    modal.addEventListener("click", function(e) {
+        if (e.target === modal) closeModal();
+    });
+
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape") closeModal();
     });
 
     // --- POMODORO ---
@@ -736,7 +955,7 @@
         notesArea.focus();
     });
 
-    // --- COMMENTS (in-memory placeholder until Firebase is connected) ---
+    // --- COMMENTS ---
     var comments = [];
 
     function initials(name) {
@@ -761,10 +980,11 @@
     function renderComments(list) {
         var el = document.getElementById("commentsList");
         if (!list.length) {
-            el.innerHTML = '<div class="no-comments">No comments yet. Be the first to post!</div>';
+            el.innerHTML = '<div class="no-comments">No comments yet. Be the first to post.</div>';
             return;
         }
-        el.innerHTML = list.map(function(c) {
+
+        el.innerHTML = list.map(function(c, i) {
             return '<div class="comment-item">' +
                 '<div class="comment-meta">' +
                     '<div class="avatar">' + initials(c.name) + '</div>' +
@@ -774,13 +994,23 @@
                         '</div>' +
                         '<div class="time">' + timeAgo(c.date) + '</div>' +
                     '</div>' +
+                    '<button class="del-btn" data-idx="' + i + '">Remove</button>' +
                 '</div>' +
                 '<div class="comment-text">' + safe(c.text) + '</div>' +
             '</div>';
         }).join("");
+
+        el.querySelectorAll(".del-btn").forEach(function(btn) {
+            btn.addEventListener("click", function() {
+                var idx = parseInt(btn.dataset.idx);
+                if (confirm("Remove this comment?")) {
+                    comments.splice(idx, 1);
+                    renderComments(comments);
+                }
+            });
+        });
     }
 
-    // Remove this listener block when switching to Firebase
     document.getElementById("submitComment").addEventListener("click", function() {
         var name = document.getElementById("commentName").value.trim();
         var grade = document.getElementById("commentGrade").value.trim();
@@ -799,7 +1029,6 @@
         document.getElementById("commentsList").scrollIntoView({ behavior: "smooth", block: "start" });
     });
 
-    // Refresh timestamps every 30s
     setInterval(function() {
         if (comments.length > 0) renderComments(comments);
     }, 30000);
